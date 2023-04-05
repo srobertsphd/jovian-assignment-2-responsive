@@ -1,0 +1,142 @@
+body {
+    max-width: 375px;
+    margin: 0 auto;
+
+}
+
+#main-block {
+    height: 1024px;
+    border-radius: 0px;
+    background-image: url("Background_image.png");
+    background-position: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#main-block::after {
+    height: 1024px;
+    border-radius: 0px;
+    background: rgba(33, 33, 33, 1);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+#header {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 37px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+#text-box {
+    margin-top: 216px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+
+#white-box {
+    height: 15px;
+    width: 90px;
+    background: #FFFFFF;
+
+}
+
+#title {
+    font-family: Libre Caslon Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#description {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+#button {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 32px;
+    color: #FFFFFF;
+    height: 42px;
+    width: 153px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newest-reads {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #000000;
+    margin: 78px 0px 78px 0px;
+
+}
+
+#card-area {
+
+}
+
+/* .card {
+
+} */
+
+/* .card-image {
+
+} */
+
+.card-date {
+    color: #B7B7B7;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    padding-top: 35px;
+    padding-left: 32px;
+    padding-bottom: 28px;
+    
+}
+
+.card-text {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+
+}
+
+.read-more {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #D9852C;
+
+}
