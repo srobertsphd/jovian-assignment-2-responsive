@@ -187,14 +187,15 @@ body {
     padding-bottom: 32px;
     padding-right: 32px;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 /* Small devices (mobile/tablets) */
 
-@media screen and (min-width: 624px) and (max-width: 1200px) {
+@media screen and (min-width: 744px) and (max-width: 1350px) {
 
     body {
-        max-width: 744px;
+        max-width: 1350px;
         margin: 0 auto 0 auto;
     }
 
@@ -216,7 +217,8 @@ body {
     #newest-reads {
         font-size: 30px;
         line-height: 36px;
-        margin-left: 72px;
+        /* margin-left: 72px; */
+        margin: 89px 0px 56px 72px;
     }
 
     #card-container {
@@ -226,7 +228,7 @@ body {
         padding-left: 72px;
         padding-right: 72px;
         border: 0px;
-        max-width: 744px;
+        max-width: 1350px;
         gap: 20px;
 
     }
@@ -234,9 +236,9 @@ body {
     .card {
         display: flex;
         flex-direction: column;
-        max-width: 187px;
-        /* width: calc((100% - 40px - 6px)/3); */
-        width: 100%;
+        /* max-width: 187px; */
+        width: calc((100% - 40px - 6px)/3);
+        /* width: 100%; */
         justify-content: flex-start;
         border: 1px solid #DDDDDD;
         height: 635px;
@@ -246,8 +248,8 @@ body {
     .card-image {
         /* height: 352px; */
         height: 352px;
-        width: 187px;
-        /* width: 100%; */
+        /* width: 187px; */
+        width: auto;
         overflow: hidden;
     }
 
@@ -265,10 +267,6 @@ body {
         line-height: 18px;
     }
 
-    .read-more {
-
-        align-self: flex-end;
-    }
 
     .card>div:last-child {
         margin-top: auto;
@@ -277,10 +275,10 @@ body {
 }
 
 /* Medium devices (tablets/laptops) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1350px) {
 
     body {
-        max-width: 1440px;
+        max-width: 1800px;
         margin: 0 auto 0 auto;
     }
 
@@ -316,6 +314,66 @@ body {
 
     #hamburger-icon {
         display: none;
+    }
+
+    #newest-reads {
+        font-size: 40px;
+        line-height: 48px;
+        margin: 89px 0px 44px 72px;
+    }
+
+    #card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 72px;
+        padding-right: 72px;
+        border: 0px;
+        max-width: 1800px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        width: calc((100% - 40px - 6px)/3);
+        /* width: 100%; */
+        justify-content: flex-start;
+        border: 1px solid #DDDDDD;
+        height: 635px;
+        margin-bottom: 60px;
+
+    }
+
+    .card-image {
+        height: 352px;
+        /* height: 50%; */
+        width: wrap;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+
+    .card-image img {
+        /* flex:0;
+        object-fit: fill; */
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card-text {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+
+    .card>div:last-child {
+        margin-top: auto;
     }
 
 }
