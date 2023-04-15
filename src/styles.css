@@ -4,7 +4,7 @@
 
 
 body {
-    max-width: 375px;
+    max-width: 744px;
     margin: 0 auto 0 auto;
 }
 
@@ -97,6 +97,7 @@ body {
     color: #FFFFFF;
     margin-top: 32px;
     margin-bottom: 32px;
+    max-width: 540px;
 }
 
 #description {
@@ -106,6 +107,7 @@ body {
     line-height: 30px;
     color: #FFFFFF;
     margin-bottom: 32px;
+    max-width: 450px;
 }
 
 
@@ -114,7 +116,6 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    /* margin-top: 32px; */
     color: #FFFFFF;
     height: 42px;
     width: 153px;
@@ -124,14 +125,10 @@ body {
     cursor: pointer;
 }
 
-#newest-reads {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    color: #000000;
-    margin: 78px 0px 78px 32px;
-}
+#divider-text {
+    display: none;
+} 
+
 
 #card-container {
     display: flex;
@@ -140,17 +137,57 @@ body {
     justify-content: center;
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 311px;
+    max-width: 744px;
     border: 0px;
 }
+
+
+
+#mobile-new-reads-div {
+    max-width: 450px;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+#new-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#mobile-reads {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #000000;
+    margin: 78px 0px 78px 0px;
+    max-width: 450px;
+  align-items: flex-start;
+    
+}
+
+
 
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 311px;
+    max-width: 450px; 
     justify-content: center;
     border: 1px solid #DDDDDD;
     margin-bottom: 32px;
+
+}
+
+
+
+.card-image img {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   
 
 }
 
@@ -208,17 +245,25 @@ body {
     #title {
         font-size: 70px;
         line-height: 86px;
+        max-width:600px;
     }
 
     #description {
         max-width: 528px;
     }
 
+    #divider-text {
+        display: block;
+    } 
+
     #newest-reads {
         font-size: 30px;
         line-height: 36px;
-        /* margin-left: 72px; */
         margin: 89px 0px 56px 72px;
+    }
+
+    #mobile-new-reads-div {
+        display: none;
     }
 
     #card-container {
@@ -236,9 +281,7 @@ body {
     .card {
         display: flex;
         flex-direction: column;
-        /* max-width: 187px; */
         width: calc((100% - 40px - 6px)/3);
-        /* width: 100%; */
         justify-content: flex-start;
         border: 1px solid #DDDDDD;
         height: 635px;
@@ -246,19 +289,18 @@ body {
     }
 
     .card-image {
-        /* height: 352px; */
         height: 352px;
-        /* width: 187px; */
         width: auto;
         overflow: hidden;
+        
     }
 
 
     .card-image img {
-        /* flex:0;
-        object-fit: fill; */
         height: 100%;
         width: 100%;
+        object-fit: unset;
+       
 
     }
 
@@ -305,21 +347,29 @@ body {
     #title {
         font-size: 80px;
         line-height: 99px;
-        width: 748px;
+        max-width: 748px;
     }
 
     #description {
-        width: 528px;
+        max-width: 528px;
     }
 
     #hamburger-icon {
         display: none;
     }
 
+    #divider-text {
+        display: block;
+    } 
+
     #newest-reads {
         font-size: 40px;
         line-height: 48px;
         margin: 89px 0px 44px 72px;
+    }
+
+    #mobile-new-reads-div {
+        display: none;
     }
 
     #card-container {
