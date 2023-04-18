@@ -235,7 +235,7 @@ body {
 
 /* Small devices (mobile/tablets) */
 
-@media screen and (min-width: 744px) and (max-width: 1350px) {
+@media screen and (min-width: 744px) and (max-width: 1150px) {
 
     body {
         max-width: 1350px;
@@ -297,6 +297,8 @@ body {
     .card-image {
         height: 352px;
         width: auto;
+        max-width: 100%;
+        max-height: 352px;
         overflow: hidden;
 
     }
@@ -305,8 +307,100 @@ body {
     .card-image img {
         height: 100%;
         width: 100%;
+        max-width:100%;
+        max-height:352px;
         object-fit: unset;
+    }
 
+    .card-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+
+    .card>div:last-child {
+        margin-top: auto;
+    }
+
+}
+
+/* Large devices (laptops) */
+
+@media screen and (min-width: 1150px) and (max-width: 1350px) {
+
+    body {
+        max-width: 1350px;
+        margin: 0 auto 0 auto;
+    }
+
+    #text-box {
+        margin-left: 72px;
+        margin-right: 72px;
+        max-width: 600px;
+    }
+
+    #title {
+        font-size: 70px;
+        line-height: 86px;
+        max-width: 600px;
+    }
+
+    #description {
+        max-width: 528px;
+    }
+
+    #divider-text {
+        display: block;
+    }
+
+    #newest-reads {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 89px 0px 56px 72px;
+    }
+
+    #mobile-new-reads-div {
+        display: none;
+    }
+
+    #card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: wrap;
+        padding-left: 72px;
+        padding-right: 72px;
+        border: 0px;
+        max-width: 1350px;
+        gap: 20px;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 40px - 6px)/3);
+        justify-content: flex-start;
+        border: 1px solid #DDDDDD;
+        height: 635px;
+
+    }
+
+    .card-image {
+        height: 352px;
+        width: auto;
+        max-width: 100%;
+        max-height: 352px;
+        overflow: hidden;
+
+    }
+
+
+    .card-image img {
+        height: 100%;
+        width: 100%;
+        max-width:100%;
+        max-height:352px;
+        object-fit: cover;
 
     }
 
@@ -406,16 +500,13 @@ body {
 
     .card-image {
         height: 352px;
-        /* height: 50%; */
         width: wrap;
         overflow: hidden;
-        object-fit: cover;
+     
     }
 
 
     .card-image img {
-        /* flex:0;
-        object-fit: fill; */
         height: 100%;
         width: 100%;
         object-fit: cover;
